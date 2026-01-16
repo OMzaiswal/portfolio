@@ -5,12 +5,13 @@ export default function Home() {
    <main className="flex flex-col items-center text-gray-800 py-12 px-6 gap-y-20 h-auto mb-50">
     <section className="text-2xl flex flex-col lg:flex-row space-y-2 space-x-10 items-center max-w-4xl mx-auto">
       <img src="me.jpg" alt="" className="rounded-full h-48 w-48 lg:h-72 lg:w-72"/>
-      <div className="space-y-1  max-w-xl">
+      <div className="space-y-1  max-w-xl text-white">
         <p>Hi there 👋</p>
-        <h1 className="text-4xl"> I'm <span className="text-green-600">Om Jaiswal</span></h1>
-        <p className="text-gray-600 text-md">Full-stack developer specializing in modern frontend development.
+        <h1 className="text-4xl "> I'm <span className="text-green-600">Om Jaiswal</span></h1>
+        <p className="text-gray-400 text-md">Full-stack developer specializing in modern frontend development.
           Creating fast, intuitive user interfaces supported by stable backend logic
-          and real-world features like payments and dashboards.
+          and real-world features like payments and dashboards. <br />
+          <i className="text-sm">(hello@om108.work  &  omjaiswal2552@gmail.com)</i>
         </p>
         <div className="flex gap-5">
           <a href="gmailto:omjaiswal2552@gmail.com" target="_blank">
@@ -32,7 +33,7 @@ export default function Home() {
       </div>
     </section>    
     <section className="max-w-4xl mx-auto space-y-4 text-center">
-      <h2 className="text-3xl font-semibold text-gray-700 lg:text-start">Tech Stack</h2>
+      <h2 className="text-3xl font-semibold text-white lg:text-start">Tech Stack & Tools</h2>
 
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
 
@@ -43,15 +44,16 @@ export default function Home() {
           { name: "Express", icon: "devicon-express-original", link: "https://expressjs.com" },
           { name: "HTML", icon: "devicon-html5-plain-wordmark colored", link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5" },
           { name: 'CSS', icon: "devicon-css3-plain-wordmark colored", link: "https://developer.mozilla.org/en-US/docs/Web/CSS"},
+          { name: "Tailwind", icon: "devicon-tailwindcss-original colored", link: "https://tailwindcss.com" },
           { name: "JavaScript", icon: "devicon-javascript-plain colored", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"},
           { name: "TypeScript", icon: "devicon-typescript-plain colored", link: "https://www.typescriptlang.org" },
-          { name: "PostgreSQL", icon: "devicon-postgresql-plain colored", link: "https://www.postgresql.org" },
+          { name: "MongoDB", icon: "devicon-mongodb-plain-wordmark colored", link: "https://www.mongodb.com/" },
+          { name: "PostgreSQL", icon: "devicon-postgresql-plain-wordmark colored", link: "https://www.postgresql.org" },
           { name: "Prisma", icon: "devicon-prisma-original", link: "https://www.prisma.io" },
           { name: "Firebase", icon: "devicon-firebase-plain colored", link: "https://firebase.google.com" },
-          { name: "Tailwind", icon: "devicon-tailwindcss-original colored", link: "https://tailwindcss.com" },
           { name: "Docker", icon: "devicon-docker-plain colored", link: "https://www.docker.com" },
         ].map((tech) => (
-          <div className="flex flex-col items-center" key={tech.name}>
+          <div className="flex flex-col items-center text-white" key={tech.name}>
             <a href={tech.link} target="_blank">
               <i className={`${tech.icon} text-8xl hover:scale-110 transition-transform`}></i>
             </a>
@@ -62,7 +64,7 @@ export default function Home() {
     </section>
 
     <section className="max-w-4xl m-auto space-y-4 ">
-      <h2 className="text-3xl font-semibold text-gray-700 lg:text-start">Projects</h2>
+      <h2 className="text-3xl font-semibold text-white lg:text-start">Projects</h2>
       <div className="space-y-8">
         <li>
           <a href="https://hungerbox.online" target="_blank" className="text-blue-600 text-lg">🍔 HungerBox - Food Delivery App</a>
