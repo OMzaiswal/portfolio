@@ -51,9 +51,11 @@ export default function Home() {
           { name: "PostgreSQL", icon: "devicon-postgresql-plain-wordmark colored", link: "https://www.postgresql.org" },
           { name: "Prisma", icon: "devicon-prisma-original", link: "https://www.prisma.io" },
           { name: "Firebase", icon: "devicon-firebase-plain colored", link: "https://firebase.google.com" },
-          { name: "Docker", icon: "devicon-docker-plain colored", link: "https://www.docker.com" },
+          { name: "Docker", icon: "devicon-docker-plain-wordmark colored", link: "https://www.docker.com" },
+          { name: "Guthub", icon: "devicon-github-original-wordmark", link: "https://github.com" },
+          { name: "Postman", icon: "devicon-postman-plain colored", link: "https://postman.com" },
         ].map((tech) => (
-          <div className="flex flex-col items-center text-white" key={tech.name}>
+          <div className="flex flex-col items-center text-white hover:scale-105" key={tech.name}>
             <a href={tech.link} target="_blank">
               <i className={`${tech.icon} text-8xl hover:scale-110 transition-transform`}></i>
             </a>
@@ -65,23 +67,45 @@ export default function Home() {
 
     <section className="max-w-4xl m-auto space-y-4 ">
       <h2 className="text-3xl font-semibold text-white lg:text-start">Projects</h2>
-      <div className="space-y-8">
+      <div className="space-y-12">
         <li>
-          <a href="https://hungerbox.online" target="_blank" className="text-blue-600 text-lg">🍔 HungerBox - Food Delivery App</a>
-          <a href="https://github.com/OMzaiswal/Food-delivery-app" className="text-blue-500 ml-4">GitHub</a>
-          <div className="flex flex-col gap-4">
+          <a href="https://hungerbox.online" target="_blank" className="text-blue-400 text-lg">🍔 HungerBox - Food Delivery App</a>
+          <a href="https://github.com/OMzaiswal/Food-delivery-app" className="text-blue-500 ml-8">GitHub</a>
+          <div className="flex flex-col gap-4 mt-1">
             <img src="hungerbox.png" alt="HungerBox" className=""/>
             <div className="text-md">
-              <p> - Full-stack food delivery platform with authentication, admin panel,
+              <p className="text-gray-300"> - Full-stack food delivery platform with authentication, admin panel,
               Firebase image storage, and mock Stripe payments.</p>
-              
             </div>
           </div>
         </li>
         <li className="space-y-4">
-          <a href="" className="text-blue-600 text-lg">GRLab - Freelance Client project</a>
+          <a href="" className="text-blue-400 text-lg mb-1">GRLab - Freelance Client project</a>
           <img src="grl.png" alt="Grl" />
-          <p>Tech & Tools - React, TypeScript, Node.js, Express.js, postgreSQL, prisma, firebase, vercel, railway</p>
+          <p className="text-gray-300">Tech & Tools - React, TypeScript, Node.js, Express.js, postgreSQL, prisma, firebase, vercel, railway</p>
+        </li>
+        <li>
+          <a href="https://ai-chatbot.om108.work" target="_blank" className="text-blue-400 text-lg">AI Live Chat Support Agent</a>
+          <a href="https://github.com/OMzaiswal/AI-chat-bot" className="text-blue-500 ml-8">GitHub</a>
+          <div className="flex flex-col gap-4 mt-1">
+            <img src="ai-chatbot-ss.png" alt="AI chatbot" className=""/>
+            <div className="text-md">
+              <p className="text-gray-300"> - An AI-powered customer support chat application.
+                    This project simulates a real-world live chat widget where an AI agent answers
+                    customer questions using a real LLM API, persists conversations, and gracefully handles failures.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="https://ai.om108.work" target="_blank" className="text-blue-400 text-lg">AI Image Editor</a>
+          <a href="https://github.com/OMzaiswal/ai-image-editor" className="text-blue-500 ml-8">GitHub</a>
+          <div className="flex flex-col gap-4 mt-1">
+            <img src="ai-image-editor.png" alt="AI chatbot" className=""/>
+            <div className="text-md">
+              <p className="text-gray-300"> - A full-stack AI-powered image editing application that 
+                allows users to modify images using natural language prompts.</p>
+            </div>
+          </div>
         </li>
       </div>
     </section>
