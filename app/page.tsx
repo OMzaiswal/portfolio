@@ -69,7 +69,7 @@ export default function Home() {
       <h2 className="text-3xl font-semibold text-white lg:text-start">Projects</h2>
       <div className="space-y-12">
         <li>
-          <a href="https://hungerbox.online" target="_blank" className="text-blue-400 text-lg">🍔 HungerBox - Food Delivery App</a>
+          <a href="https://hungerbox.om108.work" target="_blank" className="text-blue-400 text-lg">🍔 HungerBox - Food Delivery App</a>
           <a href="https://github.com/OMzaiswal/Food-delivery-app" className="text-blue-500 ml-8">GitHub</a>
           <div className="flex flex-col gap-4 mt-1">
             <img src="hungerbox.png" alt="HungerBox" className=""/>
